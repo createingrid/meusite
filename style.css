@@ -1,0 +1,30 @@
+/* Reset CSS */
+*
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+ body { 
+    background: #141414; /* Cor fundo */
+
+
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    /* alinhamento vertical */
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1rem ; 
+    margin: 15rem;
+    padding: .5rem;
+
+}    
+    
+    
+    
+
+     
+    
+
