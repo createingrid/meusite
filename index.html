@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,11 @@
   </head>
   <body>
     <header>
-      <nav class="menu-desktop">
+
+      <!-- menu lista mobile -->
+
+      <nav id="menumobile" class="menu-desktop">
+
         <ul class="menu menu-principal">
           <li>
             <a href="" class="text-link">
@@ -62,8 +66,8 @@
       </div>
 
       <!-- ICONE COR TEMA -->
-      <div>
-        <i class="bi bi-sun"></i>
+      <div class="header-toggle">
+        <i class="bi bi-sun" id="toggleTheme"></i>
         <!-- Icone -->
 
         <!-- Botão de lista -->
@@ -75,6 +79,8 @@
     <h1>
       
     </h1>
+  <!-- js -->
+   <script src="js/script.js"></script>
   </body>
 </html>
 
