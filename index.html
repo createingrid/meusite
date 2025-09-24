@@ -1,126 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+  <!-- Idioma -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- escala da tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo da Pagina -->
+    <title>meu site ingrid</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- title = Titulo da Pagina -->
-  <title>Portfolio - ingrid</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- https://icons.getbootstrap.com/#install -->
+  </head>
+  <body>
+    <header>
+      <!-- MENU DESKTOP -->
+      <nav class="menu-desktop">
+        <ul class="menu menu-principal">
+          <li>
+            <a href="#home" class="menu-link active">
+              <span class="menu-text"> HOME </span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos" class="menu-link">
+              <span class="menu-text"> PROJETOS </span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-link">
+              <span class="menu-text"> SOBRE </span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-link">
+              <span class="menu-text"> CONTATO </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
+      <!-- LOGO -->
+      <div>
+        <a href="#home">
+          <img src="logo.png" />
+        </a>
+      </div>
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <!-- ICONE COR TEMA -->
+      <div class="header-toggle">
+        <i class="bi bi-sun" id="toggleTheme"></i>
 
-</head>
+        <button id="menuHamburger" class="btn-menu-mobile">
+          <!-- BOTAO LISTA MOBILE -->
+          <i class="bi bi-list"></i>
+          <!-- MENU HAMBURGER-->
+        </button>
+      </div>
+    </header>
 
-<body> <!-- SEMANTICA SIGNIFICADO -->
-
-  <!-- CABEÇALHO -->
-  <header>
-    <!-- MENU // NAVEGAÇÃO -->
-    <nav class="menu-desktop">
-      <ul class="menu menu-principal">
-        <li>
+    <!-- MENU LISTA MOBILE -->
+    <nav id="menuMobile" class="menu menu-mobile">
+      <ul class="menu-list">
+        <li class="menu-item">
           <a href="#home" class="menu-link active">
-            <span class="menu-text">
-              Home
-            </span>
+            <span class="menu-text"> HOME </span>
           </a>
         </li>
-
-        <li>
-          <a href="#projetos" class="menu-link">
-            <span class="menu-text">
-              projetos
-            </span>
+        <li class="menu-item">
+          <a href="#servicos" class="menu-link">
+            <span class="menu-text"> PROJETOS </span>
           </a>
         </li>
-
-        <li>
+        <li class="menu-item">
           <a href="" class="menu-link">
-            <span class="menu-text">
-              sobre
-            </span>
+            <span class="menu-text"> SOBRE </span>
           </a>
         </li>
-
-        <li>
+        <li class="menu-item">
           <a href="" class="menu-link">
-            <span class="menu-text">
-              contAto
-            </span>
+            <span class="menu-text"> CONTATO </span>
           </a>
         </li>
       </ul>
     </nav>
 
-    <!-- LOGO -->
-    <div>
-      <a href="#home">
-        <img src="logo.png">
-      </a>
-    </div>
+<main id="home">
+  <!-- Carrossel bootstrap // slide/banner -->
+   <section id=" carouselBootstrap">
+</section>
 
-    <!-- TROCAR COR TEMA -->
-    <div class="header-toggle">
 
-      <i class="bi bi-sun" id="toggleTheme"> </i> <!-- ICONE -->
+   <div class="main-content">
 
-      <!-- botao lista Mobile -->
-      <button id="menuHamburger" class="btn-menu-mobile">
-        <!-- Menu Hamburger -->
-        <i class="bi bi-list"></i>
-      </button>
-    </div>
+    <h1>
+      soluçoes criativas & Desivolvimentos Front-End 
+    </h1>
 
-  </header>
+    <p>
+      ingrid Queiroz, Sao Paulo, SP, Devi  
 
-  <!-- Menu Lista Mobile -->
-  <nav id="menuMobile" class="menu menu-mobile">
-    <ul class="menu-list">
-      <li class="menu-item">
-        <a href="#home" class="menu-link active">
-          <span class="menu-text">
-            Home
-          </span>
-        </a>
-      </li>
+    </p>
 
-      <li class="menu-item">
-        <a href="#projetos" class="menu-link">
-          <span class="menu-text">
-            projetos
-          </span>
-        </a>
-      </li>
 
-      <li class="menu-item">
-        <a href="" class="menu-link">
-          <span class="menu-text">
-            sobre
-          </span>
-        </a>
-      </li>
 
-      <li class="menu-item">
-        <a href="" class="menu-link">
-          <span class="menu-text">
-            contAto
-          </span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- projetos -->
-  <section id="projetos" >
-    projetos
 
-  </section>
+   </div>
+</main>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- SERVIÇOS -->
+    <section id="projetos" class="projetos">
+      PROJETOS
+    </section>
 
+    <section id="sobre" class="sobre">
+      sobre
+      
+      <section id="contato" class="contato">
+        contato
+
+      </section>
+
+      <footer >
+        <p> &copy; 2025. </p>
+
+      </footer>
+
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+<!-- ALT + SHIFT + A = Comentario -->
+<!-- ALT + SHIFT + F = Identação -->
+<!-- Shift + ! = Iniciar html -->
