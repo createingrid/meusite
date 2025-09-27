@@ -13,11 +13,6 @@ font-family: "Playfair Display", serif;
 */
 
 
-:root{
-  
-}
-
-
 
 :root[data-theme="dark"] {
   --cor-fundo: #e0c9c9;
@@ -27,7 +22,7 @@ font-family: "Playfair Display", serif;
   --cor-icon-theme: #ffffff;
   --cor-titulo:white;
   --cor-texto:white;
-  --hover-link: #111211
+  --hover-link: #111211;
   
 
 }
@@ -56,12 +51,15 @@ font-family: "Playfair Display", serif;
   
 
 }
+html[ data-theme='light'].logo{
+  filter: invert(1);
+}
 
 html {
     scroll-behavior: 
-    scrollbar-width: thin;
-    scrollbar-color: var(--cor-icon-theme) transparent;
-}
+    scrollbar-width thin;
+    scrollbar-color: r var(--cor-icon-theme) transparent;
+};
 
 /* Reset CSS */
 * {
@@ -86,6 +84,12 @@ header {
   z-index: 9999; /* CAMADAS */
   background: var(--cor-fundo);
 }
+.logo { 
+  width: 2rem/* comprimento */;
+/* height: */ /* altura */
+}
+
+
 
 /* nav */
 .menu-desktop {
@@ -241,8 +245,14 @@ p{
 h1 {
   font-size: 5rem;
  }
+
+ .header-logo{
+  min-width: 25%;
+ }
  
-}
+ }
+ 
+
 
   /* tela 992 */
 
