@@ -274,6 +274,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  scroll-margin-top: 2.5rem;
 }
 
 .projetos-container {
@@ -377,15 +378,98 @@ li {
 
 
   /* accordion */
+
+.accordion {
+  display: inline-block;
+  width: 100%;
+
+}
+
+.accordion-header{
+  width: 100%;
+  display: flex;
+  padding: .75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent; 
+  border: 1px solid var(--cor-fundo-secundario);
+  cursor: pointer;
+  transition: ;
+}
+.accordion-header span,
+.accordion-header i {
+  color: var(--cor-titulo);
+
+}
+
 .accordion-body{
   display: none;
+  border: 1px solid var(--cor-borda);
+  padding: 1.25rem;
+  /* background: ;
+  color: ; */
+  gap: .6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 5s ease-in-out;
 }
 .accordion-item-active.accordion-body{
   display: flex;
 }
-.accordion.item.active .bi-caret-down-fill {
-  transform: rotate(180deg);
 
+.accordion-item-active.accordion-header{
+  background: red;
+}
+
+.accordion.item.active .bi-caret-down-fill {
+  /* animaçao fechando*/
+  transform: rotate(180deg);
+  transition: .3s ease-in-out;
+
+}
+.bi-caret-down-fill {
+  transition: .3s ease-in-out;
+}
+
+.accordion-header:hover{
+  background: var(--cor-fundo-secundario);
+
+  
+}
+
+.accordion-item-active.accordion-header :hover{
+  background: #747680;
+
+
+}
+/* botão */
+
+.btn-primario{
+  display: flex;
+  background: transparent;
+  width: auto;
+  border: 1px solid var(--cor-borda);
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+/* icone do botão */
+.btn-primario i {
+  font-size: 1.2rem;
+}
+
+
+
+.btn-primario span, 
+.btn-primario i {
+  color: var(--cor-textos--);
+
+}
+.btn-primario:hover{
+  transform: scale( 1.02);
+  transition: all.3s ease-in-out;
 }
   
 
