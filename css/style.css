@@ -471,7 +471,38 @@ li {
   transform: scale( 1.02);
   transition: all.3s ease-in-out;
 }
+/* contatos */
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
   
+  
+}
+.contato p {
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+.contato .btn-primario{
+  gap: 1rem;
+
+}
+.contato .email{
+  color: #dedede;
+  text-decoration: none; /*  remove  */
+}
+  .contato .span{
+    color: var(--cor-link--);
+  }
+.contato.menu-link span{
+  color: var(--cor-link--);
+}
+
 
 /* ============================
    RESPONSIVIDADE
