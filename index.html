@@ -34,9 +34,9 @@
     </nav>
 
     <!-- LOGO -->
-    <div class="logo">
+    <div class="header-logo">
       <a href="#home">
-        <img src="IMG/logo (2).png" alt="Logo do site" />
+        <img src="IMG/logo (2).png" alt="Logo do site" class="logo" />
       </a>
     </div>
 
@@ -68,7 +68,7 @@
   <main id="home">
     <section id="carouselBootstr">
       <div class="main-content">
-        <h1>Soluções Criativas & Desenvolvimento</h1>
+        <h1>Soluções Criativas & Desenvolvimento front-EndF</h1>
         <p>Ingrid Queiroz, SÃO PAULO - SP</p>
 
         <!-- REDES SOCIAIS -->
@@ -303,23 +303,25 @@
        <div class="contato-formulario">
         <h2>fale comigo</h2>
 
-       <form action="" method=" post"> 
+       <form action="https://formspree.io/f/mnnggjda" method=" post" class="form-contato"> 
         
-       <input type="text" placeholder=" nome completo*">
+       <input type="text" name="nome" placeholder=" nome completo*">
        <!-- email -->
 
-       <input type="email" name="" id="" placeholder="seu e-mail" required>
+       <input type="email" name="" email="" placeholder="seu e-mail" required>
        <!-- telefone -->
-        <input type="tel" placeholder="seu telefone" required>
+        <input type="tel" name="" id="" placeholder="seu telefone" required>
         <!-- assunto -->
          <input type="text" placeholder="assunto"required>
          
          <!-- campo mensagem -->
           
+       <textarea name="mensagem"  rows="6" placeholder=" digite sua mensagem" required></textarea>
 
-       <textarea name="" id="" required></textarea>
-       <button type="submit">
+
+       <button type="submit" class="btn-primario">
         <span>enviar</span>
+        <i class="bi bi-send"> </i>
        </button>
 
        
@@ -339,7 +341,20 @@
 
   <!-- RODAPÉ -->
   <footer>
-    <p>&copy; 2025 Ingrid Queiroz. Todos os direitos reservados.</p>
+    <p>&copy; 2025. Portifólio desenvolvido para fins educativos nas aulas o pof
+       <a href=" https://github.com/guuhferiani" 
+       target="_blank">
+       Senai leopoldina-SP 
+      </a>
+      Desenvolvido por 
+      <a href="" target="_blank">
+        <i class="bi bi-github"></i>
+        Ingrid Queiroz
+
+      </a>
+       
+
+    </p>
   </footer>
 
   <!-- JAVASCRIPT -->
